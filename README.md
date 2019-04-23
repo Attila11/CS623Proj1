@@ -1,4 +1,6 @@
 # CS623Proj1
+*View this in Raw to see proper database format*
+
 SQL Script for first part of project
 
 To run and create the database, please complete the following steps.
