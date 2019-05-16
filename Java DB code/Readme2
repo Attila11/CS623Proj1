@@ -1,0 +1,39 @@
+For this program there are two classes. The driver class and the connection class. The connection class is just used to connect to the database. 
+The paramaters for the connection database name and the credentials can be adjusted here for each database. 
+
+In the Driver class we connect to the database and run the following queries:
+
+● Get a submitted paper’s details by the author’s Primary Key. The query should return the
+following data (columns): Paper.Id, Paper.Title, Paper.Abstract, Author.EmailAddress,
+Author.FirstName, Author.LastName
+
+● Get all reviews for a paper by the paper’s Id, where the paper was recommended to be
+published. The query should return the following data (columns): All columns from the
+Review table.
+
+● Get a count of all papers submitted.
+
+● Create a new paper submission. Remember this includes creating new records in both
+the Author and Paper tables.
+
+● Try and Delete the first “Author” row in your Author table by the author’s id. Did you
+receive an error? If yes, print to the console the error you received. Also note in your
+message why the query failed. If it didn’t fail, print a message explaining why you were
+able to delete the row.
+
+When you run the program it will ask for an authors email, if you enter an existing author it will return the values,
+if not it will return that no author exists.
+
+Then it will ask for a paper ID which is an integer, this part will only accept an integer and will keep prompting the user 
+until an integer is received. Similar to the first query it will return no data found if no corresponding paper is found
+and will return the values if it is
+
+Query 3 will then execute and list the number of papers in the database
+
+The next prompt will ask for two strings seperated by a space and a comma. The method logic will split the input and assign them
+to the correct paramater input when inserting to the database.
+
+The last query will delete an author based on author ID. If the author can not be deleted due to some SQL constraint the 
+SQL error will be displayed. If they can be deleted it will delete the author.
+
+All of the methods are enclosed in try catch blocks and the connection is closed after each method. 
